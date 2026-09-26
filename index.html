@@ -1,0 +1,223 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Basic Network Lab</title>
+
+    <link rel="stylesheet"
+          href="../style.css">
+
+    <style>
+
+        .lab-page {
+            max-width: 1000px;
+            margin: auto;
+            padding: 80px 8%;
+        }
+
+        .lab-header {
+            margin-bottom: 50px;
+        }
+
+        .lab-header h1 {
+            font-size: 50px;
+        }
+
+        .lab-header h1 span {
+            color: #00e5ff;
+        }
+
+        .lab-header p {
+            color: #9baabd;
+            margin-top: 15px;
+        }
+
+        .lab-box {
+            background: #0c121c;
+            border: 1px solid #1b2737;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 25px;
+        }
+
+        .lab-box h2 {
+            color: #00e5ff;
+            margin-bottom: 15px;
+        }
+
+        .lab-box li {
+            margin: 10px 0;
+            color: #aab7c8;
+        }
+
+        pre {
+            background: #05080d;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            color: #00e5ff;
+        }
+
+        .download {
+            display: inline-block;
+            padding: 13px 22px;
+            background: #00e5ff;
+            color: #031014;
+            border-radius: 7px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="logo">
+        <span>&lt;/&gt;</span> Hiran<span>.</span>Network
+    </div>
+
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="../index.html#labs">Labs</a>
+    </nav>
+
+</header>
+
+
+<main class="lab-page">
+
+    <div class="lab-header">
+
+        <div class="badge">
+            LAB 01
+        </div>
+
+        <h1>
+            Basic <span>Network</span>
+        </h1>
+
+        <p>
+            Build a basic LAN using Cisco Packet Tracer.
+        </p>
+
+    </div>
+
+
+    <section class="lab-box">
+
+        <h2>🎯 Objective</h2>
+
+        <ul>
+
+            <li>Understand basic LAN topology.</li>
+
+            <li>Connect PCs to a Cisco switch.</li>
+
+            <li>Configure IPv4 addresses.</li>
+
+            <li>Test connectivity using ping.</li>
+
+        </ul>
+
+    </section>
+
+
+    <section class="lab-box">
+
+        <h2>🌐 Topology</h2>
+
+        <p>
+            PC1 → Switch → PC2
+        </p>
+
+        <br>
+
+        <p>
+            Network: 192.168.10.0/24
+        </p>
+
+    </section>
+
+
+    <section class="lab-box">
+
+        <h2>💻 IP Configuration</h2>
+
+        <pre>
+PC1
+IP Address: 192.168.10.10
+Subnet Mask: 255.255.255.0
+
+PC2
+IP Address: 192.168.10.20
+Subnet Mask: 255.255.255.0
+        </pre>
+
+    </section>
+
+
+    <section class="lab-box">
+
+        <h2>🧪 Test Connectivity</h2>
+
+        <pre>
+PC1> ping 192.168.10.20
+        </pre>
+
+        <p>
+            Successful replies indicate that the two PCs
+            can communicate through the switch.
+        </p>
+
+    </section>
+
+
+    <section class="lab-box">
+
+        <h2>📥 Packet Tracer File</h2>
+
+        <p>
+            Download the completed Packet Tracer topology.
+        </p>
+
+        <br>
+
+        <a class="download"
+           href="../files/basic-network.pkt"
+           download>
+            Download .PKT File
+        </a>
+
+    </section>
+
+
+</main>
+
+
+<footer>
+
+    <p>
+        © 2026 Hiran Rajbanshi
+    </p>
+
+    <p>
+        Cisco Packet Tracer Labs
+    </p>
+
+</footer>
+
+</body>
+
+</html>
+```
